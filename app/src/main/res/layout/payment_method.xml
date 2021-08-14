@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="413dp"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/bottom"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="680dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="420dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/top"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-6dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="476dp"
+        android:layout_height="43dp"
+        android:background="#44CCC4"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="-57dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="65dp"
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:text="@string/payment"
+        android:textColor="#FAFAFA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <TextView
+        android:id="@+id/select_payment"
+        android:layout_width="270dp"
+        android:layout_height="43dp"
+        android:text="@string/paymentMethod"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <TextView
+        android:id="@+id/recom_method"
+        android:layout_width="271dp"
+        android:layout_height="51dp"
+        android:text="@string/recom_method"
+        android:textColor="#090202"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="299dp"
+        android:layout_height="383dp"
+        app:srcCompat="@drawable/undraw_Payments_re_77x0"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/btn_card"
+        android:layout_width="294dp"
+        android:layout_height="61dp"
+        android:text="@string/btn_card"
+        android:textSize="20sp"
+        app:backgroundTint="#44CCC4"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="335dp" />
+
+    <Button
+        android:id="@+id/btn_card2"
+        android:layout_width="294dp"
+        android:layout_height="61dp"
+        android:text="@string/btn_card2"
+        android:textSize="20sp"
+        app:backgroundTint="#44CCC4"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="507dp" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="203dp"
+        android:layout_height="136dp"
+        app:srcCompat="@drawable/download"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="544dp" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="132dp"
+        android:layout_height="65dp"
+        app:srcCompat="@drawable/mac"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="421dp" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="135dp"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/visa"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
