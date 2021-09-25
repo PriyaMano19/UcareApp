@@ -1,2 +1,3 @@
 rootProject.name = "Ucare App"
 include ':app'
+include ':priya'
