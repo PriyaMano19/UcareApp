@@ -52,7 +52,8 @@ public class form extends AppCompatActivity {
         }
         btn.setOnClickListener(v ->
         {
-             registeredusers regiusers = new registeredusers(name.getText().toString(),age.getText().toString(),address.getText().toString(),phno.getText().toString(),date.getText().toString());
+             registeredusers regiusers = new registeredusers(name.getText().toString(),age.getText().toString(),address.getText()
+                     .toString(),phno.getText().toString(),date.getText().toString());
              if(emp_edit==null) {
                  String vname = name.getText().toString().trim();
                  String vage = age.getText().toString().trim();
@@ -79,6 +80,12 @@ public class form extends AppCompatActivity {
 
                  if (vphno.isEmpty()) {
                      phno.setError("Phone number is required!");
+                     phno.requestFocus();
+                     return;
+                 }
+
+                 if (vphno.length() < 10 || vphno.length() > 10) {
+                     phno.setError("Enter Valid Phone number!");
                      phno.requestFocus();
                      return;
                  }

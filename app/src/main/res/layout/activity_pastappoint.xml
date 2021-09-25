@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/lastone1"
-    tools:context=".infoact">
+    >
 
     <ImageView
         android:id="@+id/imageView6"
@@ -51,16 +51,16 @@
             <ImageView
                 android:layout_width="220dp"
                 android:layout_height="162dp"
-                android:src="@drawable/thfeed" />
+                android:src="@drawable/thdoc" />
 
             <Button
                 android:id="@+id/th_butt1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="200dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/but"
-                android:text="FeedBack"
+                android:text="My doctor Appointment"
                 android:textColor="#fff"
                 android:textSize="15sp"
                 android:textStyle="italic|bold" />
@@ -88,18 +88,18 @@
 
             <ImageView
                 android:layout_width="199dp"
-                android:layout_height="150dp"
-                android:src="@drawable/thcontact" />
+                android:layout_height="160dp"
+                android:src="@drawable/thlab" />
 
 
             <Button
                 android:id="@+id/th_butt2"
-                android:layout_width="150dp"
-                android:layout_height="45dp"
-                android:layout_marginLeft="200dp"
-                android:layout_marginTop="70dp"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="50dp"
                 android:background="@drawable/but"
-                android:text="Contact Us"
+                android:text="My lab Test Appointment"
                 android:textColor="#fff"
                 android:textSize="15sp"
                 android:textStyle="italic|bold" />
@@ -130,16 +130,16 @@
             <ImageView
                 android:layout_width="211dp"
                 android:layout_height="150dp"
-                android:src="@drawable/thabout" />
+                android:src="@drawable/thpast" />
 
             <Button
                 android:id="@+id/th_butt3"
-                android:layout_width="150dp"
-                android:layout_height="45dp"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="180dp"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="50dp"
                 android:background="@drawable/but"
-                android:text="Abourt us"
+                android:text=" MY Vaccine Appointment"
                 android:textColor="#fff"
                 android:textSize="15sp"
                 android:textStyle="italic|bold" />
