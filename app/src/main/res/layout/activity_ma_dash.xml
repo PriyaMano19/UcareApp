@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ma_dash"
+    android:background="@color/background_common">
+    <ImageButton
+     android:id="@+id/imageButton3_3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+     android:layout_alignParentEnd="true"
+     android:layout_alignParentRight="true"
+     android:layout_centerVertical="true"
+     android:layout_marginTop="341dp"
+     android:layout_marginEnd="34dp"
+     android:layout_marginRight="34dp"
+     android:src="@drawable/ic_baseline_pageview_24" />
+
+ <ImageButton
+     android:id="@+id/imageButton4_3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+     android:layout_alignParentEnd="true"
+     android:layout_alignParentRight="true"
+     android:layout_marginTop="207dp"
+     android:layout_marginEnd="31dp"
+     android:layout_marginRight="31dp"
+     android:src="@drawable/ic_baseline_pageview_24" />
+
+ <ImageView
+        android:id="@+id/ma_round_3"
+        android:layout_width="237dp"
+        android:layout_height="218dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-84dp"
+        android:layout_marginLeft="-84dp"
+        android:layout_marginTop="-93dp"
+        app:srcCompat="@drawable/roun_2"
+        tools:layout_editor_absoluteX="-102dp"
+        tools:layout_editor_absoluteY="-104dp" />
+
+    <ImageView
+        android:id="@+id/ma_menu_3"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_baseline_menu_24"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="31dp" />
+
+ <TextView
+     android:id="@+id/ma_dash_box1_3"
+     android:layout_width="367dp"
+     android:layout_height="wrap_content"
+     android:layout_alignParentStart="true"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+
+     android:layout_centerHorizontal="true"
+     android:layout_marginStart="22dp"
+     android:layout_marginLeft="22dp"
+
+     android:layout_marginTop="171dp"
+     android:background="@drawable/daash" />
+
+ <TextView
+     android:id="@+id/ma_dash_box2_3"
+     android:layout_width="367dp"
+     android:layout_height="wrap_content"
+     android:layout_alignParentStart="true"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+
+     android:layout_alignParentEnd="true"
+     android:layout_centerInParent="true"
+     android:layout_marginStart="25dp"
+     android:layout_marginLeft="25dp"
+     android:layout_marginTop="323dp"
+     android:layout_marginEnd="19dp"
+     android:background="@drawable/daash" />
+
+ <TextView
+     android:id="@+id/ma_dash_box3_3"
+     android:layout_width="362dp"
+     android:layout_height="110dp"
+     android:layout_alignParentStart="true"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+
+     android:layout_centerHorizontal="true"
+     android:layout_marginStart="29dp"
+     android:layout_marginLeft="29dp"
+     android:layout_marginTop="468dp"
+
+     android:background="@drawable/daash" />
+
+ <TextView
+        android:id="@+id/ma_dash_head_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:text="@string/ma_covid19"
+        android:textColor="@color/ma_tittle"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+ <TextView
+     android:id="@+id/head2_3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentStart="true"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:layout_marginStart="138dp"
+     android:layout_marginLeft="138dp"
+     android:layout_marginTop="359dp"
+     android:text="@string/ma_co_vacc"
+     android:textSize="20dp"
+     android:textStyle="bold" />
+
+ <ImageView
+     android:id="@+id/imageView9_3"
+     android:layout_width="95dp"
+     android:layout_height="79dp"
+
+     android:layout_alignParentStart="true"
+
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentBottom="true"
+     android:layout_centerVertical="true"
+     android:layout_marginStart="36dp"
+     android:layout_marginLeft="36dp"
+     android:layout_marginBottom="421dp"
+     app:srcCompat="@drawable/pcr" />
+
+ <TextView
+     android:id="@+id/head3_3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentStart="true"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentBottom="true"
+     android:layout_centerInParent="true"
+     android:layout_marginStart="162dp"
+     android:layout_marginLeft="162dp"
+     android:layout_marginBottom="439dp"
+     android:text="@string/ma_co_covidtest"
+     android:textSize="20dp"
+     android:textStyle="bold" />
+
+ <ImageView
+     android:id="@+id/imageView13_3"
+     android:layout_width="100dp"
+     android:layout_height="82dp"
+
+     android:layout_alignParentStart="true"
+
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:layout_marginStart="41dp"
+     android:layout_marginLeft="41dp"
+     android:layout_marginTop="482dp"
+     app:srcCompat="@drawable/www" />
+
+ <ImageView
+     android:id="@+id/imageView14_3"
+     android:layout_width="108dp"
+     android:layout_height="79dp"
+     android:layout_alignParentStart="true"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentBottom="true"
+     android:layout_centerVertical="true"
+     android:layout_marginStart="31dp"
+     android:layout_marginLeft="31dp"
+     android:layout_marginBottom="258dp"
+     app:srcCompat="@drawable/certi" />
+
+ <TextView
+     android:id="@+id/head3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentEnd="true"
+     android:layout_alignParentRight="true"
+     android:layout_alignParentBottom="true"
+     android:layout_marginEnd="67dp"
+     android:layout_marginRight="67dp"
+     android:layout_marginBottom="156dp"
+     android:text="@string/ma_vacc_cer"
+     android:textSize="20dp"
+     android:textStyle="bold" />
+
+ <ImageButton
+     android:id="@+id/imageButton3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+     android:layout_alignParentEnd="true"
+     android:layout_alignParentRight="true"
+     android:layout_marginTop="514dp"
+     android:layout_marginEnd="22dp"
+     android:layout_marginRight="22dp"
+     android:src="@drawable/ic_baseline_pageview_24" />
+
+
+</RelativeLayout>
