@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ucareapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +14,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UcareApp">
-        <activity android:name=".MainActivity">
+        <activity android:name=".pastappoint"></activity>
+        <activity android:name=".appointment" />
+        <activity android:name=".doctor" />
+        <activity android:name=".contactus" />
+        <activity android:name=".infoact" />
+        <activity android:name=".appoitmentdashboard" />
+        <activity android:name=".Cardview" />
+        <activity android:name=".test" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDdmArwJiJbAqNAOw5Cayi6Zn2s1zY0R5Q" />
+
+        <activity android:name=".rvactivity" />
+        <activity android:name=".bmicalculator" />
+        <activity android:name=".viewpast" />
+        <activity android:name=".aboutus" />
+        <activity android:name=".Myappointmets" />
+        <activity android:name=".form" />
+        <activity android:name=".testsstatus" />
+        <activity android:name=".commoninterface" />
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".getstarted">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
