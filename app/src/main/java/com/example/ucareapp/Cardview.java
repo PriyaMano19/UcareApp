@@ -1,5 +1,6 @@
 package com.example.ucareapp;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -13,18 +14,24 @@ import android.widget.TextView;
 
 public class Cardview extends AppCompatActivity {
     private CardView context;
-     private TextView t1;
+
+    private TextView t1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cardview);
 
-       t1  = (TextView)findViewById(R.id.thcard_1);
 
-        t1 .setOnClickListener(v->
+        t1 = (TextView) findViewById(R.id.thcard_1);
+
+
+        t1.setOnClickListener(v ->
 
         {
-            Intent intent = new Intent(Cardview.this,activity_update.class);
+
+            Intent intent = new Intent(Cardview.this, commoninterface.class);
+
             startActivity(intent);
 
         });

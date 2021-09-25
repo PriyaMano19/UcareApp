@@ -7,25 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class appoitmentdashboard extends AppCompatActivity {
 
-    private MainActivity context;
+    private appoitmentdashboard context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_appoitmentdashboard);
 
         context = this;
 
         Button btn = findViewById(R.id.th_butt1);
         Button btn2 = findViewById(R.id.th_butt2);
-        Button btn3 = findViewById(R.id.th_butt3);
-
-        btn.setOnClickListener(new View.OnClickListener(){
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context,activity_speacial.class);
+                Intent intent = new Intent(context, commoninterface.class);
                 startActivity(intent);
 
             }
@@ -35,22 +33,11 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context,Cardview.class);
-                startActivity(intent);
-            }
-        });
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context,activity_update.class);
+                Intent intent = new Intent(context, Cardview.class);
                 startActivity(intent);
             }
         });
     }
-
-
-
-
 
 
 }
