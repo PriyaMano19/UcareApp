@@ -9,6 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UcareApp">
+        <activity android:name=".getstarted"></activity>
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".checkrating" />
+        <activity android:name=".sara" />
+        <activity android:name=".blankact" />
+        <activity android:name=".infoact" />
+        <activity android:name=".Pastappoint" />
+        <activity android:name=".Cardview" />
+        <activity android:name=".act_reserve" />
+        <activity android:name=".layout_item" />
+        <activity android:name=".RVActivity" />
+        <activity android:name=".activity_contactus" />
+        <activity android:name=".viewbooking" />
+        <activity android:name=".activity_update" />
+        <activity android:name=".activity_reserve" />
+        <activity android:name=".activity_appointment" />
+        <activity android:name=".activity_doctor" />
+        <activity android:name=".activity_speacial" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
