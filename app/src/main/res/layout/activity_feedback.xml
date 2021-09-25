@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedback"
+    android:background="@color/background_common">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="232dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-111dp"
+        android:layout_marginLeft="-111dp"
+        android:layout_marginTop="-126dp"
+        app:srcCompat="@drawable/roun_2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_baseline_menu_24" />
+
+    <TextView
+        android:id="@+id/ma_com_bigbox"
+        android:layout_width="351dp"
+        android:layout_height="449dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/txt" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="177dp"
+        android:numStars="5"
+        android:outlineSpotShadowColor="@color/white" />
+
+    <TextView
+        android:id="@+id/ma_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:text="@string/ma_fe_feed"
+        android:textColor="@color/ma_tittle"
+        android:textSize="40dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/ma_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="277dp"
+        android:text="@string/ma_fe_com"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/ma_com_box"
+        android:layout_width="wrap_content"
+        android:layout_height="142dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="138dp"
+        android:background="@drawable/text"
+        android:inputType="textImeMultiLine" />
+
+    <Button
+        android:id="@+id/ma_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginBottom="54dp"
+        android:text="@string/ma_fe_sub" />
+
+
+</RelativeLayout>
