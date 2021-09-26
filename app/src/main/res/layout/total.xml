@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_logout3"
+        android:layout_width="194dp"
+        android:layout_height="57dp"
+        android:text="@string/btn_viewreceipt"
+        android:textSize="16sp"
+        app:backgroundTint="#44CCC4"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="551dp" />
+
+    <Button
+        android:id="@+id/button_logout4"
+        android:layout_width="194dp"
+        android:layout_height="57dp"
+        android:text="@string/btn_skip"
+        android:textSize="16sp"
+        app:backgroundTint="#44CCC4"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="617dp" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="427dp"
+        android:layout_height="66dp"
+        app:srcCompat="@drawable/bottom"
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="680dp" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="94dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="167dp"
+        android:layout_height="32dp"
+        android:text="@string/app_name"
+        android:textColor="#FDFCFC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="342dp"
+        android:layout_height="47dp"
+        android:text="@string/label1"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="342dp"
+        android:layout_height="47dp"
+        android:text="@string/viewRecipt"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="504dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="149dp"
+        android:layout_height="55dp"
+        android:text="@string/label2"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="137dp" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="149dp"
+        android:layout_height="55dp"
+        android:text="@string/total"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="149dp"
+        android:layout_height="55dp"
+        android:text="@string/totalvalue"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="422dp"
+        android:layout_height="246dp"
+        app:srcCompat="@drawable/undraw_online_payments_luau"
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="258dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
