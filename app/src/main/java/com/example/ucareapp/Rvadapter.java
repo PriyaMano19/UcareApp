@@ -40,9 +40,6 @@ public class Rvadapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         employee e = null;
         this.onBindViewHolder(holder,position,e);
     }
-
-
-
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position,employee e) {
 
       employeeVH vh =(employeeVH) holder;
@@ -54,10 +51,7 @@ public class Rvadapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
       vh.t5.setText(emp.getMobile());
       vh.t6.setText(emp.getDate());
       vh.t7.setText(emp.getTime());
-
-
-
-        vh.option.setOnClickListener(v->{
+      vh.option.setOnClickListener(v->{
           PopupMenu popupMenu = new PopupMenu(context,vh.option);
           popupMenu.inflate(R.menu.option_menu);
           popupMenu.setOnMenuItemClickListener(item ->
@@ -68,6 +62,7 @@ public class Rvadapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                       intent.putExtra("EDIT", emp);
                       context.startActivity(intent);
                       break;
+
                   case R.id.delete:
                       DAOemployee dao=new DAOemployee();
                       dao.remove(emp.getKey()).addOnSuccessListener(suc->

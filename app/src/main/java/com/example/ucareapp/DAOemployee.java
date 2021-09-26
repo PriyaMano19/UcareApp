@@ -13,19 +13,15 @@ public class DAOemployee {
     public DAOemployee() {
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         databaseReference = db.getReference(employee.class.getSimpleName());
-
     }
-
     public Task<Void> add(employee emp) {
 
         return databaseReference.push().setValue(emp);
-
     }
 
     public Task<Void> update(String key, HashMap<String, Object> hashMap) {
         return databaseReference.child(key).updateChildren(hashMap);
     }
-
     public Task<Void> remove(String key) {
         return databaseReference.child(key).removeValue();
     }
@@ -36,7 +32,6 @@ public class DAOemployee {
         }
         return databaseReference.orderByKey().startAfter(key).limitToFirst(8);
     }
-
     public Query get() {
         return databaseReference;
     }

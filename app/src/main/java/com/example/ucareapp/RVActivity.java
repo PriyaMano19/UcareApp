@@ -26,7 +26,6 @@ public class RVActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_rvactivity);
         swipeRefreshLayout = findViewById(R.id.swip);
         recyclerView = findViewById(R.id.rv);
@@ -34,12 +33,10 @@ public class RVActivity extends AppCompatActivity {
         LinearLayoutManager manager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(manager);
         recyclerView.setAdapter(adapter);
-         adapter = new Rvadapter(this);
+        adapter = new Rvadapter(this);
       recyclerView.setAdapter(adapter);
-
       dao = new DAOemployee();
       loaddata();
-
       recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
           @Override
           public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
@@ -47,24 +44,12 @@ public class RVActivity extends AppCompatActivity {
             int totalItem = linearLayoutManager.getItemCount();
             int lastVisible = linearLayoutManager.findLastCompletelyVisibleItemPosition();
              if(totalItem<lastVisible+3){
-
-              if(!isloading){
+                 if(!isloading){
                   isloading=true;
                   loaddata();
-              }
-             }
-
-
+              } }
           }
-      });
-
-
-
-
-
-
-
-    }
+      }); }
     private void loaddata(){
         swipeRefreshLayout.setRefreshing(true);
         dao.get(key).addValueEventListener(new ValueEventListener() {
@@ -82,13 +67,8 @@ public class RVActivity extends AppCompatActivity {
              adapter.notifyDataSetChanged();
              isloading = false;
                 swipeRefreshLayout.setRefreshing(false);
-
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                swipeRefreshLayout.setRefreshing(false);
-            }
-        });
-    }
-}
+                swipeRefreshLayout.setRefreshing(false); }
+        }); }}
