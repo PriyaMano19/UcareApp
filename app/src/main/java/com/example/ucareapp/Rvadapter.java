@@ -1,97 +1,94 @@
 package com.example.ucareapp;
 
-import android.os.Parcelable;
-import android.util.Patterns;
 import android.view.ViewGroup;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
 import android.widget.PopupMenu;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
+public class RVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
+{
 
-public class Rvadapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
- private Context context;
- ArrayList<employee>list= new ArrayList<>();
-   
-
-    public Rvadapter(Context ctx)
-   {
-       this.context=ctx;
-   }
-    public  void setItems(ArrayList<employee> emp){
-        list.addAll(emp);
+    private Context context;
+    ArrayList<registeredusers> list = new ArrayList<>();
+    public RVAdapter(Context ctx)
+    {
+        this.context = ctx;
     }
+    public void setItems(ArrayList<registeredusers> regiusers)
+    {
+        list.addAll(regiusers);
+    }
+
+
     @NonNull
-    @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull @org.jetbrains.annotations.NotNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.activity_layout_item,parent,false);
 
-        return new employeeVH(view);
+    @Override
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.layout_item,parent,false);
+        return new UserVH(view);
     }
+
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position)
     {
-        employee e = null;
+        registeredusers e = null;
         this.onBindViewHolder(holder,position,e);
     }
 
 
+    public void onBindViewHolder(@NonNull  RecyclerView.ViewHolder holder, int position,registeredusers e) {
+        UserVH vh = (UserVH) holder;
+        registeredusers regiusers = e==null? list.get(position):e;
+        vh.name.setText(regiusers.getName());
+        vh.age.setText(regiusers.getAge());
+        vh.address.setText(regiusers.getAddress());
+        vh.phno.setText(regiusers.getPhno());
+        vh.date.setText(regiusers.getDate());
+        vh.txt_option.setOnClickListener(v->
+        {
+            PopupMenu popupMenu =new PopupMenu(context,vh.txt_option);
+            popupMenu.inflate(R.menu.option_menu);
+            popupMenu.setOnMenuItemClickListener(item->
+            {
+                switch (item.getItemId()) {
+                    case R.id.menu_edit:
+                        Intent intent = new Intent(context, form.class);
+                        intent.putExtra("EDIT", regiusers);
+                        context.startActivity(intent);
+                        break;
 
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position,employee e) {
+                    case R.id.menu_remove:
+                        DAOUsers dao=new DAOUsers();
+                        dao.remove(regiusers.getKey()).addOnSuccessListener(suc->
+                        {
+                            Toast.makeText(context, "You cancelled the appointment", Toast.LENGTH_SHORT).show();
+                            notifyItemRemoved(position);
+                            list.remove(regiusers);
+                        }).addOnFailureListener(er->
+                        {
+                            Toast.makeText(context, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
+                        });
 
-      employeeVH vh =(employeeVH) holder;
-      employee emp = e==null? list.get(position):e;
-      vh.t1.setText(emp.getName());
-      vh.t2.setText(emp.getNic());
-      vh.t3.setText(emp.getAge());
-      vh.t4.setText(emp.getAddress());
-      vh.t5.setText(emp.getMobile());
-      vh.t6.setText(emp.getDate());
-      vh.t7.setText(emp.getTime());
+                        break;
+                }
+                return false;
 
+            });
+            popupMenu.show();
 
-
-        vh.option.setOnClickListener(v->{
-          PopupMenu popupMenu = new PopupMenu(context,vh.option);
-          popupMenu.inflate(R.menu.option_menu);
-          popupMenu.setOnMenuItemClickListener(item ->
-          {
-              switch (item.getItemId()){
-                  case  R.id.menuedit:
-                      Intent intent = new Intent(context,activity_appointment.class);
-                      intent.putExtra("EDIT", emp);
-                      context.startActivity(intent);
-                      break;
-                  case R.id.delete:
-                      DAOemployee dao=new DAOemployee();
-                      dao.remove(emp.getKey()).addOnSuccessListener(suc->
-                      {
-                          Toast.makeText(context, "Record is removed", Toast.LENGTH_SHORT).show();
-                          notifyItemRemoved(position);
-                          list.remove(emp);
-                      }).addOnFailureListener(er->
-                      {
-                          Toast.makeText(context, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
-                      });
-                      break;
-              }
-              return false;
-          });
-          popupMenu.show();
-              }
-              );
+        });
 
     }
 
     @Override
     public int getItemCount() {
-
-       return list.size();
+        return list.size();
     }
 }
