@@ -142,5 +142,6 @@
     <string name="contact">Contact Us</string>
     <string name="about">About Us</string>
     <string name="todo">TODO</string>
+    <string name="delete">Delete</string>
 </resources>
 

@@ -15,6 +15,16 @@
         tools:layout_editor_absoluteX="82dp"
         tools:layout_editor_absoluteY="527dp" />
 
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="247dp"
+        android:layout_height="58dp"
+        android:text="@string/delete"
+        android:textSize="16sp"
+        app:backgroundTint="#44CCC4"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="449dp" />
+
     <ImageView
         android:id="@+id/imageView30"
         android:layout_width="422dp"
